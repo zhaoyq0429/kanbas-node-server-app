@@ -1,11 +1,9 @@
-function HelloRoutes(app)
-{
-    app.get("/", (req, res) => {
-        res.send("Welcome to Web Dev!")
-    })
-
-    app.get("/hello", (req, res) => {
-        res.send("Life is good!")
-    })
-}
-export default HelloRoutes;
+const Hello = (app) => {
+  app.get("/hello", (req, res) => {
+    res.send("Life is good!");
+  });
+  app.get("/", (req, res) => {
+    res.send("Welcome to Full Stack Development!");
+  });
+};
+export default Hello;
